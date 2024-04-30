@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="section-content">
+    <h1>{{ .Title }}</h1>
+  
+    {{ .Content }}
+  
+    <div class="runes-list">
+  {{ range .Pages }}
+      <div>
+        <a href="{{ .RelPermalink }}"><img src="{{ .Params.Image }}" alt="{{ .Params.Rune }}" title="{{ .Params.Rune }}" /> {{ .Params.Rune }}</a>
+      </div>
+  {{ end }}
+    </div>
+  </div>
+{{ end }}

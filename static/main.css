@@ -1,0 +1,47 @@
+#content .section-content,
+main#content>.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+#content .markdown-content p,
+#content .post-content p,
+#content .section-content p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+nav.local {
+  display: flex;
+  justify-content: space-between;
+  font-size: 90%;
+}
+nav.local .prev::before {
+  content: "<";
+  display:inline-block;
+}
+nav.local .next::after {
+  content: ">";
+  display:inline-block;
+}
+
+.runes-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 1em;
+}
+.runes-list > div {
+  text-align: center;
+  margin: 0 auto;
+}
+.runes-list a {
+  text-decoration: none;
+}
+.runes-list img {
+  display: block;
+}
+
+.post-content {
+  margin-bottom: 1em;
+}

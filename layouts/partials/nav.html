@@ -1,0 +1,19 @@
+<nav class="local">
+  <div>
+    {{ with .NextInSection }}
+    <div class="prev">
+        <a href="{{ .RelPermalink }}">{{ .Params.Rune }}</a>
+    </div>
+    {{ end }}
+  </div>
+  <div class="top">
+    <a href="{{ .CurrentSection.RelPermalink }}">Back to {{ .CurrentSection.LinkTitle }}</a>
+  </div>
+  <div>
+    {{ with .PrevInSection }}
+    <div class="next">
+        <a href="{{ .RelPermalink }}">{{ .Params.Rune }}</a>
+    </div>
+    {{ end }}
+  </div>
+</nav>

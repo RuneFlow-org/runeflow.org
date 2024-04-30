@@ -1,0 +1,14 @@
+:root {
+  --main-width: 1024px;
+}
+
+body {
+  font-size: 18px;
+  background-color: red;
+  font-style: italic;
+}
+
+.header > .flex > .small {
+  font-family: inherit;
+  margin-right: 2em;
+}
